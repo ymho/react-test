@@ -1,8 +1,7 @@
 import React, { useState, useEffect, ReactNode } from "react";
 import { GeoJsonLayer } from "@deck.gl/layers/typed";
 import { MapboxOverlay, MapboxOverlayProps } from "@deck.gl/mapbox/typed";
-import { useControl } from "react-map-gl";
-import MapGL, { NavigationControl } from "react-map-gl";
+import MapGL, { useControl, NavigationControl } from "react-map-gl";
 import TestGeoJson1 from "../data/test.json";
 import TestGeoJson2 from "../data/jrw-osakaloop.json";
 

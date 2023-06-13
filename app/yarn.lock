@@ -368,7 +368,7 @@
     "@luma.gl/experimental" "^8.5.20"
     "@luma.gl/shadertools" "^8.5.20"
 
-"@deck.gl/react@8.9.18":
+"@deck.gl/react@8.9.18", "@deck.gl/react@^8.9.18":
   version "8.9.18"
   resolved "https://registry.yarnpkg.com/@deck.gl/react/-/react-8.9.18.tgz#404b6be119766da872a0511eeb12d1a78d3bfa20"
   integrity sha512-HpkZptmTGOKKoRmf3JQEuV2TvxtjeeKclRwQYe7c0mWfxVbVnfBKcKBYMC8cIyXF6ONgLjKXp3PN0iIoftu9gw==
