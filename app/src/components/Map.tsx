@@ -5,6 +5,7 @@ import MapGL, { useControl, NavigationControl } from "react-map-gl";
 import TestGeoJson1 from "../data/test.json";
 import TestGeoJson2 from "../data/jrw-osakaloop.json";
 
+
 const DeckGLOverlay: React.FC<MapboxOverlayProps> = (props) => {
     const overlay = useControl<MapboxOverlay>(() => new MapboxOverlay(props));
     overlay.setProps(props);
