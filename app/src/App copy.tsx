@@ -25,6 +25,31 @@ const DeckGLOverlay: React.FC<
   return null;
 };
 
+const createCubeMesh = () => {
+  const geometry = new THREE.BoxGeometry(1, 1, 1);
+  const material = new THREE.MeshBasicMaterial({ color: 0xff0000 });
+  const mesh = new THREE.Mesh(geometry, material);
+  return mesh;
+}
+
+const getMesh = () => {
+  // Three.jsのcreateCubeMesh関数を呼び出して直方体のメッシュを作成
+  const mesh = createCubeMesh();
+  // Three.jsのメッシュオブジェクトを返す
+  return mesh;
+}
+
+// const createCube = (latitude: number, longitude: number, size: number) => {
+//   const position = [
+//     longitude, latitude
+//   ];
+
+//   return {
+//     position,
+//     size
+//   };
+// }
+
 const App: React.FC = () => {
   const [viewState, setViewState] = React.useState({
     longitude: 135.495951,
@@ -40,7 +65,8 @@ const App: React.FC = () => {
       geometry: {
         type: 'Point',
         coordinates: [135.495951, 34.702485]
-      }
+      },
+      mesh: getMesh(), // Three.jsで作成したメッシュオブジェクト
     }
   ];
 

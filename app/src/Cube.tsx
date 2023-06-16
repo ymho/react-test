@@ -1,6 +1,7 @@
-import React, { useState, useRef } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
+import React, { useState, useRef } from "react";
 import * as THREE from "three";
+
 import Map from "./components/Map.tsx"
 
 
@@ -59,7 +60,7 @@ const Cube = () => {
       onPointerOver={() => setHovered(true)}
       onPointerOut={() => setHovered(false)}
     >
-      <boxGeometry args={[1, 2, 1]} />
+      <boxGeometry args={[1, 1, 1]} />
       <meshStandardMaterial color={color} />
     </mesh>
   );
@@ -144,4 +145,4 @@ const App: React.FC = () => {
   );
 };
 
-export default App;
+export default Cube;
